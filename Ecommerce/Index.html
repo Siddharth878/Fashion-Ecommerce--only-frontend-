@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href ="CSS/General.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,regular,500,600" media="all">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>  
+
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter&family=Public+Sans:wght@100;400;500;600;700&family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter&family=Italiana&family=Public+Sans:wght@100;400;500;600;700&family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
+    <script defer src="Script/script.js"></script>
+
+    
+
+
+
+
+
+
+
+    <!-- this is for scrolling images horizontally  -->
+    <script src = "https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script type = "text/javascript">
+       $(document).ready(function() {
+  var docWidth = $('.g2-container').width(),
+    slidesWidth = $('#imgs').width(),
+    rangeX = slidesWidth - docWidth,
+    $images = $('#imgs');
+
+  $(window).on('resize', function() {
+    var docWidth = $('.g2-container').width(),
+      slidesWidth = $('#imgs').width(),
+      rangeX = slidesWidth - docWidth;
+  })
+
+  $(document).on('mousemove', function(e) {
+    var mouseX = e.pageX,
+      percentMouse = mouseX * 100 / docWidth,
+      offset = percentMouse / 100 * slidesWidth - percentMouse / 200 * docWidth;
+
+    $images.css({
+      '-webkit-transform': 'translate3d(' + -offset + 'px,0,0)',
+      'transform': 'translate3d(' + -offset + 'px,0,0)'
+    });
+  });
+})
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<title>Photography Portfolio</title>
+
+</head>
+<body>
+
+    <div class = "header">
+    <header>
+
+
+        <nav class = "Main-nav">
+            <ul class = "Main-nav-list">
+            <li>
+                <a class = "Main-nav-links" href ="#">
+                    Home
+                </a>
+            </li>
+            <li>
+                <a class = "Main-nav-links" href ="pages/collection.html">
+                    Shop
+                </a>
+            </li>
+            <li>
+                <a class = "Main-nav-links about-btn" href ="#">
+                    About
+                </a>
+            </li>
+            <li>
+                <a class = "Main-nav-links" href ="#">
+                    Journal
+                </a>
+            </li>
+            <li>
+                <a class = "Main-nav-links contact-btn" href ="#">
+                    Contact
+                </a>
+            </li>
+            <li>
+                <a class = "Main-nav-links" href ="#">
+                    <ion-icon name="cart-outline" class = "cart-logo"></ion-icon>
+                </a>
+            </li>
+        </ul>
+        </nav>
+
+
+
+
+
+        <div class = "cart">
+        </div>
+    </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Hero Section -->
+    <section class = "Hero-section container">
+        <div class = "Hero-img-background grid grid--2--cols">
+                <div class = "Hero-text">
+                    <div class = "Hero-text_preplusmain">
+                             <p class = "Hero-text-main-pre ">
+                               ECO-RELAX. MADE WITH 100% GOTS
+                             </p>
+                             <div class = "Hero-text-main Centered">
+                                <h1 class = "Primary-heading  Centered">Organic cotton, free from harmful substances.</h1>
+                             </div>
+                    </div>
+
+
+                         <a href="../Ecommerce/pages/collection.html" class = "Hero-text-button btnn Centered">SHOP THE COLLECTION</a>
+                 </div> 
+
+
+        </div>
+    
+    
+    
+    </section>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- After Hero Section -->
+    <section class = "Post-Hero-Section container">
+       <!-- Here let post - hero - section = PHS -->
+        <div class = "grid grid--2--cols PHS-images--container">
+            <div class = "PHS-images-1">
+                <img src = "IMG/00.jpg" alt ="1st-post-img"  class = "PHS-image"/>
+                <div class = "PHS-img-text">
+                   <p class = "PHS-pre-text">Shop New in</p>
+                   <p class = "Line-phs-img"></p>
+                   <p class  = "PHS-post-text">SHOP NOW</p>
+                </div>
+            </div>
+        
+            <div class = "PHS-images-1">
+                <img src = "IMG/01.jpg" alt ="2nd-post-img"  class = "PHS-image"/>
+                <div class = "PHS-img-text">
+                   <p class = "PHS-pre-text">Shop Bestsellers</p>
+                   <p class = "Line-phs-img"></p>
+                   <p class  = "PHS-post-text">SHOP NOW</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+    <section class = "Points container">
+      <div class = "first-point-bloc">
+        Shop hundreds of enamel pins from artists.
+         The best cool pin badges to decorate your backpack, 
+         denim jean jacket, lapel, and festival hat for sale in
+          our online store.
+      </div>
+      <div class = "second-point-bloc">
+         <ul class = "second-point-list">
+             <li class = "second-point-li">
+                <ion-icon name="heart-outline" class = "second-point-list-icon"></ion-icon>
+                 <p class = "tert-heading">CRUELTY FREE</p>
+                <p class = "second-point-li-text">Free digital proofs and best design advice</p>
+             </li>
+             <li class = "second-point-li">
+                <ion-icon name="leaf-outline" class = "second-point-list-icon"></ion-icon>
+                <p class = "tert-heading">100% VEGAN</p>
+               <p class = "second-point-li-text">You can always start with 50 pcs here</p>
+            </li>
+            <li class = "second-point-li">
+                <ion-icon name="flower-outline" class = "second-point-list-icon"></ion-icon>
+                <p class = "tert-heading">NATURAL INGREDIENTS</p>
+               <p class = "second-point-li-text">Get excellent pins or have your money back</p>
+            </li>
+         </ul>
+    </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <section class = "section--gallery container" >
+        <div class = "main-gallery">
+            <div class = "gallery-list g11">
+                <img class = "img--gallery first" src="IMG/12-opti.jpg" alt = 'main-gallery-1st-img'/>
+                <img class = "img--gallery second" src="IMG/11-second.jpg" alt = 'main-gallery-1st-img'/>
+                 <p class = "main-gallery-text" >Bomb pin Pineapple!</p>
+            </div>
+            <div class = "gallery-list g12">
+                <img class = "img--gallery first" src="IMG/11-opti.jpg" alt = 'main-gallery-1st-img'/>
+                <img class = "img--gallery second" src="IMG/12-second.jpg" alt = 'main-gallery-1st-img'/>
+               <p class ="main-gallery-text" >Bomb pin !</p>
+            </div>
+            <div class = "gallery-list g13">
+                <img class = "img--gallery first" src="IMG/13-opti.jpg" alt = 'main-gallery-1st-img'/>
+                <img class = "img--gallery second" src="IMG/13-second.jpg" alt = 'main-gallery-1st-img'/>
+                 <p class = "main-gallery-text" >Bomb pin !</p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <section class = "section--factory container" id ='about-for-now'>
+
+
+    <div class = "row row1 grid grid--1--cols">
+            <div class = "factory-intro row-ele1st">
+                <p class = "factory-intro-head">From our powerhouse to your house.</p>
+                 <p class = "factory-intro-head-text">
+                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                 Suspendisse varius enim in eros elementum tristique.
+                 </p>
+             </div>
+            
+             <div class = "row-ele2nd extra">
+               <img class = "row-img" src="IMG/jocelyn-morales-JiqTLjzEH18-unsplash.jpg">
+               <p class = 'row-text'>
+                  Smooth as velvet tested postive for skin tests like PA98 and UIK19
+               </p>
+             </div>
+     
+
+    </div>
+
+
+    <div class = "row row2 grid grid--1--cols">
+
+         <div class = "row-ele2nd extra">
+           <img class = "row-img" src="IMG/okasdf.jpg">
+           <p class = 'row-text'>
+              Indian Summer Formula Non-Greasy .Sweat and Water resistant.
+              PA+++ UVA and SPF 55 UVB
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+       Obcaecati, modi. Perferendis libero, maxime iusto odit eligend
+           </p>
+         </div>
+  </div>
+
+
+<div class = "row  row3 grid grid--1--cols">
+
+    <div class = "row-ele2nd extra">
+      <p class = 'row-text'>
+        The Everytime products . No Skin routine Don't worry 
+        Make your own
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+       Obc, modi. Perferendis libero, maxime iusto odit eligendi
+      </p>
+      <img class = "row-img" src="IMG/jkhasdf.jpg">
+    </div> 
+</div>
+
+
+<div class = "row  row4 grid grid--1--cols">
+
+    <div class = "row-ele2nd extra">
+      <img class = "row-img" src="IMG/doctor.jpg">
+      <p class = 'row-text'>
+       Clinically tested @mdash;
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+       Obcaecati, modi. Perferendis libero, maxime iusto odit eligendi
+        ullam quo enim praesentium quis nihil rerum pariatur quisquam sequi, 
+        necessitatibus minus consectetur eaque.
+      </p>
+    </div>
+</div>
+        
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class = "slides-testmonials--section container">
+  <div class = "testi-heading-main">
+  <p class = "testi--heading">
+      Get the Rest of the History
+  </p>
+</div>  
+ 
+
+<div class = "for-padding">
+  
+  <div class = "testimonials-container">
+   
+   
+    <div class = "testimonials testimonials1st">
+    <img  class = "testimonial-img" src = "IMG/man-01.jpg" alt = "Siddharth ki photo">
+    <blockquote class = "testimonial">
+        <div class = "testimonial-text-in-bloc">
+        <div class = "testi-rating">
+            <svg xmlns="http://www.w3.org/2000/svg" class="star-icon" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" class="star-icon" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" class="star-icon" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" class="star-icon" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" class="star-icon" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+        </div>
+        <p class = "testi-items testimonial-text">
+            "Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Ad alias aperiam architecto at culpa deleniti deserunt eaque
+            eligendi inventore iure natus nobis."
+        </p>
+        <p class = "testi-items testimonial-author">Siddharth saxena </p>
+    </div>
+    </blockquote>
+</div>
+
+
+
+
+   <div class = "testimonials testimonials2nd hidden">
+    <img  class = "testimonial-img " src = "IMG/women-01.jpg" alt = "Siddharth ki photo">
+    <blockquote class = "testimonial ">
+        <div class = "testimonial-text-in-bloc">
+        <div class = "testi-rating">
+            <svg xmlns="http://www.w3.org/2000/svg" class="star-icon" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" class="star-icon" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" class="star-icon" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" class="star-icon" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+             
+        </div>
+        <p class = "testi-items testimonial-text">
+            "Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Ad alia
+        </p>
+        <p class = "testi-items testimonial-author">Siddharth saxena </p>
+    </div>
+    </blockquote>
+</div>
+
+
+
+
+
+
+    
+
+    <button class="btn btn--01">
+        <svg xmlns="http://www.w3.org/2000/svg" class="btn-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+        </svg>
+    </button>
+
+    <button class="btn btn--02">
+        <svg xmlns="http://www.w3.org/2000/svg" class="btn-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        </svg>
+    </button>
+
+
+    
+  </div>
+
+</div>
+
+</section>    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Logos  -->
+
+<section class = "logos container2">
+      
+
+    <div class = "logo-header">
+        <p class = "head-logo">
+            as featured in
+        </p>
+    </div>
+    <div class = "logo-pack-master">
+             
+           <div class = "logo-pack">
+            <img class = "logo" src="IMG/logos/techcrunch.png" alt = "techcrunch logo"/>
+           </div>
+
+           <div class = "logo-pack">
+            <img  class = "logo" src="IMG/logos/business-insider.png" alt = "b logo"/>
+         
+            </div>
+
+            <div class = "logo-pack">
+                <img class = "logo" src="IMG/logos/forbes.png" alt = "forbes logo"/>
+              
+            </div>
+                
+            <div class = "logo-pack">
+                <img class = "logo who" src="IMG/who.png" alt = "forbes logo"/>
+                  
+            </div>
+
+
+    </div>      
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class = "Question-sections container3">
+
+    <div class = "Question-section-heading">
+        <div class = "ques-head-disc">
+            <span class = "Line-ques-head"></span>
+            YOU HAVE QUESTIONS
+        </div>
+        <p class = "ques-head">We’ve got answers.</p>
+    </div>
+ 
+     
+    
+    <div class = "accordian-row">
+    <div class = "Accordian-items accordian-container">
+        <div class = "Accordian ">
+            <div class = "Accordian-ques">
+                <div class = "accord-line">
+                    <p class = "Accordian-number">01</p>
+                    <p class = "text-acc">
+                    Do you offer educational discounts ?
+                  </p>
+                </div> 
+                   <div class = "icon-accord-cont">
+                       <svg xmlns="http://www.w3.org/2000/svg" class="icon-acc icon-acc1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                      </svg>
+                    </div>  
+               
+            </div>   
+
+            <div class = "hidden-acc1 box-accordian b1"> 
+                   <p class = "box-accordian-ans">
+                      Sure! It's just needs your college id for verification 
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                       Veritatis ex placeat nihil quidem molestiae provident 
+                       aliquam quaerat quisquam! 
+                   
+                    </p>
+            </div>
+        </div>
+
+        <div class = "Line-accordian">
+            <p class = "Line-accordian-main"></p>
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <div class = "Accordian ">
+            <div class = "Accordian-ques">
+                <div class = "accord-line">
+                    <p class = "Accordian-number">02</p>
+                    <p class = "text-acc">
+                        Which payment methods do you accept ?
+                  </p>
+                </div> 
+                <div class = "icon-accord-cont">
+                       <svg xmlns="http://www.w3.org/2000/svg" class="icon-acc icon-acc2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                      </svg>
+                    </div>
+               
+            </div>   
+
+            <div class = "hidden-acc2 box-accordian b2"> 
+                   <p class = "box-accordian-ans">
+                      Any payment mode visa,credit,debit,cash on delivery 
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                       Veritatis ex placeat nihil quidem molestiae provident 
+                       aliquam quaerat quisquam! 
+                   
+                    </p>
+            </div>
+          
+        </div>
+        <div class = "Line-accordian">
+            <p class = "Line-accordian-main"></p>
+        </div>
+
+        
+
+
+
+
+
+
+
+
+        <div class = "Accordian ">
+            <div class = "Accordian-ques">
+                <div class = "accord-line">
+                    <p class = "Accordian-number">03</p>
+                    <p class = "text-acc">
+                        I have a license. Can I switch to a subscription?
+                  </p>
+                </div> <div class = "icon-accord-cont">
+                       <svg xmlns="http://www.w3.org/2000/svg" class="icon-acc icon-acc3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                      </svg>
+                    </div>
+               
+            </div>   
+
+            <div class = "hidden-acc3 box-accordian b3"> 
+                   <p class = "box-accordian-ans">
+                      Sure! It's just needs your college id for verification 
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                       Veritatis ex placeat nihil quidem molestiae provident 
+                       aliquam quaerat quisquam! 
+                   
+                    </p>
+            </div>
+        </div>
+
+        <div class = "Line-accordian">
+            <p class = "Line-accordian-main"></p>
+        </div>
+
+
+    </div> 
+
+
+
+     
+
+
+
+    </div>
+        
+</section>
+
+
+<section class = "Gallery-2 g2-bg">
+    <!-- <img class = "gallery-2-img" src = "IMG/birds.jpg"> -->
+
+    <div class = 'g2-head'><p class = "g2-main-head">Follow <span class = "g2-head-comp-name">@salma</span> on Instagram .</p>
+        <a href="#" class = "Hero-text-button btnn Centered">FOLLOW @Salma</a>
+    </div>
+    <div class = "g2-container">
+        <div class = "g2-imgs" id = "imgs">
+            <div class = "overflow-cont"><img class = "g2-img" src="IMG/g2-1.jpg" alt = "g2-img-1"/></div>
+            <div class = "overflow-cont"><img class = "g2-img" src="IMG/g2-2.jpg" alt = "g2-img-2"/></div>
+            <div class = "overflow-cont"><img class = "g2-img" src="IMG/g2-3.jpg" alt = "g2-img-3"/></div>
+            <div class = "overflow-cont"><img class = "g2-img" src="IMG/g2-4.jpg" alt = "g2-img-4"/></div>
+            <div class = "overflow-cont"><img class = "g2-img" src="IMG/g2-5.jpg" alt = "g2-img-5"/></div>
+            <div class = "overflow-cont"><img class = "g2-img" src="IMG/g2-1.jpg" alt = "g2-img-1"/></div>
+        </div>
+    </div>
+    <!-- <div class = "signature">
+        <img alt ="signature" class = "signature-main" src="IMG/sid-sig-3-removebg-preview.png"/>
+    </div> -->
+</section>
+
+<!-- <div class = "fade-the-previous"></div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class = "section-footer container4" id ="section-foot">
+
+
+    <div class = "footer-1st-row" >
+        <div class = "email-part">
+            <p class = "email-label">
+                Sign up for email newsletters from SALMA!
+            </p>
+            <div class = "email-input">
+                <label for = "email">Email Address</label>
+                <input id = "email"  type="email"
+                       name="email"
+                       placeholder="me_89@example.com"
+                required/>
+                </div>
+                <p class = "email-after">TO LEARN HOW WE PROCESS YOUR DATA, VISIT OUR <span class = "alag">PRIVACY NOTICE.</span> YOU CAN <span class = "alag">PRIVACY NOTICE.</span><span class = "alag"><span class = "alag">PRIVACY NOTICE.</span></span> AT ANY TIME WITHOUT COSTS.  </p>
+    
+            </div>
+
+
+        <div class ="links-parts">
+            
+            <div class = "ln-part-colos-1">
+                <ul class = "links-cols-1">
+                    <li>
+
+                    </li>
+                    <li>
+                        <a href ="#" class = "link-cols-1">SHOP</a>
+                    </li>
+                    <li>
+                        <a href ="#" class = "link-cols-1">ALL PRODUCTS</a>
+                    </li>
+                    <li>
+                        <a href ="#" class = "link-cols-1">VISIT STORE</a>
+                    </li>
+                    <li>
+                        <a href ="#" class = "link-cols-1">HELPLINE</a>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div class = "ln-part-colos-2">
+
+                <ul class = "links-cols-2">
+                    <li>
+                        <div class = "links-pt-2-social">
+                            <ion-icon class = "link-pt2-s-logo"name="logo-facebook"></ion-icon>
+                            <ion-icon class = "link-pt2-s-logo"name="logo-instagram"></ion-icon>
+                            <ion-icon class = "link-pt2-s-logo"name="logo-twitter"></ion-icon>
+                            <ion-icon class = "link-pt2-s-logo"name="logo-linkedin"></ion-icon>
+                        </div>
+                    </li>
+                    <li>
+                        <a href ="#" class = "link-cols-1">ALL PRODUCTS</a>
+                    </li>
+                    <li>
+                        <a href ="#" class = "link-cols-1">VISIT STORE</a>
+                    </li>
+                    <li>
+                        <a href ="#" class = "link-cols-1">ABOUT</a>
+                    </li>
+
+                    <li>
+                        <a href ="#" class = "link-cols-1">FAQ</a>
+                    </li>
+                    <li>
+                        <a href ="#" class = "link-cols-1">CONTACT</a>
+                    </li>
+                    <li>
+                        <a href ="#" class = "link-cols-1">HELPLINE</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <div class = 'footer-2nd-row'>
+        
+        <div class = "f2-1 f2-o">
+            <div class = "f2">
+            <ion-icon class = 'link-pt-s-logo' name="mail-outline"></ion-icon>
+            <p class = "f2t f2-1-txt">
+                Siddharthsaxena974@gmail.com
+            </p>
+        </div>
+        <div class = "vertical-line"></div>
+        </div>
+
+
+        <div class = "f2-2 f2-o">
+            <div class = "f2">
+            <ion-icon class = 'link-pt-s-logo' name="location-outline"></ion-icon>
+            <p class = "f2t f2-2-txt">
+                DLF CYBERCITY PARKENCLAVE 1
+               80538 Gurugram . Haryana
+            </p>
+        </div>
+        <div class = "vertical-line"></div>
+        </div>
+
+        <div class = "f2-3 f2-o">
+            <div class = "f2">
+            <ion-icon class = 'link-pt-s-logo' name="call-outline"></ion-icon>
+            <p class = "f2t f2-3-txt">
+                0129-2314598 9832745938
+            </p>
+        </div>
+    </div>
+
+    </div>
+</section>
+
+
+<section class = "Section-footer">
+    <footer class = "Footer container2">
+        <p class = "Footer-text">Siddharth saxena&#169; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;section--g
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  2017061</p>
+    </footer>
+</section>
+
+
+</body>
+</html>

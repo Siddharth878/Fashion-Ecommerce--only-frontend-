@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/General.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,regular,500,600" media="all">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter&family=Public+Sans:wght@100;400;500;600;700&family=Rubik:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter&family=Italiana&family=Public+Sans:wght@100;400;500;600;700&family=Rubik:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
+    <script defer src="/Script/script.js"></script>
+
+
+
+
+
+
+
+
+
+    <!-- this is for scrolling images horizontally  -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var docWidth = $('.g2-container').width(),
+                slidesWidth = $('#imgs').width(),
+                rangeX = slidesWidth - docWidth,
+                $images = $('#imgs');
+
+            $(window).on('resize', function () {
+                var docWidth = $('.g2-container').width(),
+                    slidesWidth = $('#imgs').width(),
+                    rangeX = slidesWidth - docWidth;
+            })
+
+            $(document).on('mousemove', function (e) {
+                var mouseX = e.pageX,
+                    percentMouse = mouseX * 100 / docWidth,
+                    offset = percentMouse / 100 * slidesWidth - percentMouse / 200 * docWidth;
+
+                $images.css({
+                    '-webkit-transform': 'translate3d(' + -offset + 'px,0,0)',
+                    'transform': 'translate3d(' + -offset + 'px,0,0)'
+                });
+            });
+        })
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <title>Photography Portfolio</title>
+
+</head>
+
+<body>
+
+
+
+    <header>
+
+
+        <nav class="Main-nav">
+            <ul class="Main-nav-list">
+                <li>
+                    <a class="Main-nav-links" href="../Index.html">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a class="Main-nav-links" href="#">
+                        Shop
+                    </a>
+                </li>
+                <li>
+                    <a class="Main-nav-links" href="#">
+                        About
+                    </a>
+                </li>
+                <li>
+                    <a class="Main-nav-links" href="#">
+                        Journal
+                    </a>
+                </li>
+                <li>
+                    <a class="Main-nav-links" href="#">
+                        Contact
+                    </a>
+                </li>
+                <li>
+                    <a class="Main-nav-links" href="#">
+                        <ion-icon name="cart-outline" class="cart-logo"></ion-icon>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+
+
+
+        
+
+        <div class = "cart">
+        </div>
+
+        
+    </header>
+
+
+
+
+  <section class = " container product-01 products grid grid--2--cols">
+      
+
+    <div class = "product--imgs">
+        <img  class = "product-image-main product-image-main-00" src = "../IMG/13-opti.jpg" alt = "product-01-img"/>
+        <img  class = "product-image-main product-image-main-01" src = "../IMG/12-opti.jpg" alt = "product-01-img"/>
+    </div>
+
+    <div class = "product-discription">
+      
+        <div class = "pro-name">
+            Moisturizer Cream
+        </div>
+        <div class = "horizontal-line-2"></div>
+        <div class = "pro-price">
+            Rs. 349/-
+        </div>
+        <div class = "pro-d">
+           <p class = "discp">discription</p>
+           <p class ="d-text">
+            Boiled Egg and avo hard enamel pin! Material : 
+            golden hard enamellpin pin Back: with a rubber clasp Dimensions: 
+            13 mm The pin is pinned on a card!
+           </p>
+        </div>
+
+        <div class = "horizontal-line-2"></div>
+
+        <div class = "pro-q">
+            <div class = "Add-to-cart-button btnn Centered">
+                ADD TO CART
+            </div>
+        </div>
+    </div>
+
+  </section>
+
+
+
+
+
+
+
+
+  <!-- Footer  -->
+
+
+  <section class = "section-footer-product section-footer container4">
+
+
+    <div class = "footer-1st-row">
+        <div class = "email-part">
+            <p class = "email-label">
+                Sign up for email newsletters from SALMA!
+            </p>
+            <div class = "email-input">
+                <label for = "email">Email Address</label>
+                <input id = "email"  type="email"
+                       name="email"
+                       placeholder="me_89@example.com"
+                required/>
+                </div>
+                <p class = "email-after">TO LEARN HOW WE PROCESS YOUR DATA, VISIT OUR <span class = "alag">PRIVACY NOTICE.</span> YOU CAN <span class = "alag">PRIVACY NOTICE.</span><span class = "alag"><span class = "alag">PRIVACY NOTICE.</span></span> AT ANY TIME WITHOUT COSTS.  </p>
+    
+            </div>
+
+
+        <div class ="links-parts">
+            
+            <div class = "ln-part-colos-1">
+                <ul class = "links-cols-1">
+                    <li>
+
+                    </li>
+                    <li>
+                        <a href ="#" class = "link-cols-1">SHOP</a>
+                    </li>
+                    <li>
+                        <a href ="#" class = "link-cols-1">ALL PRODUCTS</a>
+                    </li>
+                    <li>
+                        <a href ="#" class = "link-cols-1">VISIT STORE</a>
+                    </li>
+                    <li>
+                        <a href ="#" class = "link-cols-1">HELPLINE</a>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div class = "ln-part-colos-2">
+
+                <ul class = "links-cols-2">
+                    <li>
+                        <div class = "links-pt-2-social">
+                            <ion-icon class = "link-pt2-s-logo"name="logo-facebook"></ion-icon>
+                            <ion-icon class = "link-pt2-s-logo"name="logo-instagram"></ion-icon>
+                            <ion-icon class = "link-pt2-s-logo"name="logo-twitter"></ion-icon>
+                            <ion-icon class = "link-pt2-s-logo"name="logo-linkedin"></ion-icon>
+                        </div>
+                    </li>
+                    <li>
+                        <a href ="#" class = "link-cols-1">ALL PRODUCTS</a>
+                    </li>
+                    <li>
+                        <a href ="#" class = "link-cols-1">VISIT STORE</a>
+                    </li>
+                    <li>
+                        <a href ="#" class = "link-cols-1">ABOUT</a>
+                    </li>
+
+                    <li>
+                        <a href ="#" class = "link-cols-1">FAQ</a>
+                    </li>
+                    <li>
+                        <a href ="#" class = "link-cols-1">CONTACT</a>
+                    </li>
+                    <li>
+                        <a href ="#" class = "link-cols-1">HELPLINE</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <div class = 'footer-2nd-row'>
+        
+        <div class = "f2-1 f2-o">
+            <div class = "f2">
+            <ion-icon class = 'link-pt-s-logo' name="mail-outline"></ion-icon>
+            <p class = "f2t f2-1-txt">
+                Siddharthsaxena974@gmail.com
+            </p>
+        </div>
+        <div class = "vertical-line"></div>
+        </div>
+
+
+        <div class = "f2-2 f2-o">
+            <div class = "f2">
+            <ion-icon class = 'link-pt-s-logo' name="location-outline"></ion-icon>
+            <p class = "f2t f2-2-txt">
+                DLF CYBERCITY PARKENCLAVE 1
+               80538 Gurugram . Haryana
+            </p>
+        </div>
+        <div class = "vertical-line"></div>
+        </div>
+
+        <div class = "f2-3 f2-o">
+            <div class = "f2">
+            <ion-icon class = 'link-pt-s-logo' name="call-outline"></ion-icon>
+            <p class = "f2t f2-3-txt">
+                0129-2314598 9832745938
+            </p>
+        </div>
+    </div>
+
+    </div>
+</section>
+
+
+<section class = "Section-footer">
+    <footer class = "Footer container2">
+        <p class = "Footer-text">Siddharth saxena&#169; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;section--g
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  2017061</p>
+    </footer>
+</section>
+
+
+</body>
+
+</html>
